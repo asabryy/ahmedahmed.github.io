@@ -1,5 +1,0 @@
-# Ignore MacOS hidden files
-.DS_Store
-
-# Ignore node_modules if future NodeJS tooling is added
-node_modules/
