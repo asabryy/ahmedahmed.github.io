@@ -1,29 +1,48 @@
 /* style.css */
 
-/*
-  Suggestion: Define CSS variables for colors, fonts, and sizing at the root to
-  avoid repeating hex codes and make them easy to update.
-*/
+/* 1. Variables */
 :root {
+  /* Core colors */
   --bg-color: #1e1e1e;
   --text-color: #d4d4d4;
   --accent-color: #569cd6;
   --link-color: #9cdcfe;
   --link-hover-color: #d7ba7d;
+  /* Button colors */
   --btn-bg: #0078D4;
   --btn-hover-bg: #005A9E;
+  /* Layout */
   --container-max: 1100px;
   --font-mono: 'Fira Code', monospace;
+  /* VSCode-like tabs */
+  --vscode-tab-bar-bg:   #252526;
+  --vscode-tab-inactive: #2d2d2d;
+  --vscode-tab-active:   #1e1e1e;
+  --vscode-border:       #3c3c3c;
+  --vscode-text-inactive:#c5c5c5;
+  --vscode-text-active:  #e8e8e8;
+  --vscode-hover:        #313131;
+}
+
+/* 2. Base & Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-mono);
-  margin: 0;
-  padding: 0;
+  font-size: 1rem;
 }
 
+/* 3. Containers */
 .container {
   width: 90%;
   max-width: var(--container-max);
@@ -31,17 +50,22 @@ body {
   padding: 2rem 0;
 }
 
-header {
+/* 4. Header & Footer */
+header,
+footer {
+  background-color: var(--vscode-tab-bar-bg);
   text-align: center;
-  padding: 3rem 0;
-  background-color: #252526;
-  border-bottom: 1px solid #333;
+  padding: 2rem 0;
+}
+
+header {
+  border-bottom: 1px solid var(--vscode-border);
 }
 
 header h1 {
   color: var(--accent-color);
-  margin-bottom: 0.5rem;
   font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 header p {
@@ -49,38 +73,18 @@ header p {
   margin-bottom: 1rem;
 }
 
-nav a {
-  color: #dcdcaa;
-  margin: 0 0.8rem;
-  text-decoration: none;
-  font-size: 1rem;
+footer {
+  color: #858585;
+  font-size: 0.8rem;
+  margin-top: 2rem;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Resume Download Button */
-.btn-resume {
-  display: inline-block;
-  margin-left: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--btn-bg);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-family: var(--font-mono);
-}
-
-.btn-resume:hover {
-  background-color: var(--btn-hover-bg);
-}
-
+/* 5. Typography */
 h2 {
   color: #c586c0;
   font-size: 2rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--vscode-border);
   padding-bottom: 0.5rem;
 }
 
@@ -89,47 +93,93 @@ h3 {
   font-size: 1.5rem;
 }
 
-p, li {
-  font-size: 1rem;
+p,
+li {
   line-height: 1.6;
 }
 
+/* 6. Lists */
 ul {
   list-style-type: square;
   padding-left: 1.5rem;
 }
 
+/* 7. Links & Buttons */
 a {
   color: var(--link-color);
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--link-hover-color);
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+.btn-resume {
+  display: inline-block;
+  margin: 1rem 0 0 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--btn-bg);
+  color: #fff;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+}
+
+.btn-resume:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+/* 8. Syntax Coloring */
+.syntax-var    { color: #9cdcfe; }
+.syntax-string { color: #ce9178; }
+.comment       { color: #6a9955; white-space: pre-wrap; margin: 0.2rem 0; }
+.func          { color: #dcdcaa; margin: 0.5rem 0 0 0; }
+.keyword       { color: #c586c0; }
+.module        { color: #9cdcfe; }
+.alias         { color: #ce9178; }
+.punctuation   { color: #d4d4d4; }
+.highlight     { background-color: rgba(86, 156, 214, 0.2); padding: 0.2rem 0.4rem; border-radius: 4px; }
+
+p.func code {
+  font-size: 1rem;
+}
+
+/* 9. About Section */
 .about-content {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   align-items: center;
   text-align: center;
 }
 
-.profile-pic {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+.profile-pic,
+.about-content img {
+  max-width: 250px;
+  border-radius: 4px;
+  border: 2px solid var(--vscode-border);
   object-fit: cover;
-  margin-bottom: 1rem;
-  border: 2px solid #3c3c3c;
 }
 
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .about-content p {
+    margin-left: 2rem;
+  }
+}
+
+/* 10. Skills */
 .skills-icons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   gap: 1rem;
-  align-items: center;
-  justify-items: center;
-  margin-bottom: 2rem;
 }
 
 .skills-icons i {
@@ -143,28 +193,55 @@ a:hover {
   gap: 1rem;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 0.8rem;
-  background-color: #252526;
-  color: #858585;
-  margin-top: 2rem;
+/* 11. VSCode-style Tabs */
+.tabs {
+  display: flex;
+  gap: 2px;
+  background: var(--vscode-tab-bar-bg);
+  border-bottom: 1px solid var(--vscode-border);
+  padding: 4px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
-/* Smooth scrolling for nav links */
-html {
-  scroll-behavior: smooth;
+.tabs .tab {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--vscode-text-inactive);
+  background: var(--vscode-tab-inactive);
+  border: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 1px solid var(--vscode-tab-inactive);
+  text-decoration: none;
 }
 
-/* Responsive tweaks: consider combining media queries for related components */
-@media (min-width: 768px) {
-  .about-content {
-      flex-direction: row;
-      text-align: left;
-  }
+.tabs .tab:hover {
+  background: var(--vscode-hover);
+  color: var(--vscode-text-active);
+}
 
-  .about-content p {
-      margin-left: 2rem;
-  }
+.tabs .tab.active {
+  background: var(--vscode-tab-active);
+  color: var(--vscode-text-active);
+  border-color: var(--vscode-border);
+  border-bottom-color: transparent;
+}
+
+.tabs .tab::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.tabs .tab.active::before {
+  opacity: 1;
 }
