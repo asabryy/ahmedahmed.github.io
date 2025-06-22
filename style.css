@@ -230,6 +230,9 @@ pre.comment {
 
 /* 11. VSCode-style Tabs */
 .tabs {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   display: flex;
   gap: 2px;
   background: var(--vscode-tab-bar-bg);
