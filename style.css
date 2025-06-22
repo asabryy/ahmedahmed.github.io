@@ -146,6 +146,11 @@ pre.func code {
 pre.comment code {
   color: #6a9955;
   font-family: var(--font-mono);
+  white-space: pre-wrap;
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;      /* adds indent for all lines */
+  text-indent: -1.5rem;      /* pulls first line back to align with "triple quote" */
+  display: block;
 }
 pre.func {
   color: #dcdcaa;
@@ -154,11 +159,43 @@ pre.func {
   white-space: pre-wrap;
 }
 
+.keyword {
+  color: #c586c0; /* Purple: typical for keywords like 'def', 'return', etc. */
+}
+
+.function-name {
+  color: #dcdcaa; /* Yellowish: matches your function name style */
+  font-family: var(--font-mono);
+}
+
+.syntax-def {
+  color: #569cd6; /* blue */
+}
+
+.syntax-func {
+  color: #dcdcaa; /* light yellow */
+  font-weight: bold;
+}
+
+.syntax-parens {
+  color: #d7ba7d; /* darker yellow */
+}
+
+.syntax-params {
+  color: #dcdcaa;
+  font-style: italic;
+}
+
+.syntax-colon {
+  color: #d7ba7d; /* darker yellow */
+}
+
 pre.comment {
   color: #6a9955;
   font-family: var(--font-mono);
   margin: 0.5rem 0;
   white-space: pre-wrap;
+  padding-left: 2rem; /* <-- This adds indentation */
 }
 
 .syntax-var    { color: #9cdcfe; }
@@ -190,6 +227,29 @@ pre.comment {
   text-align: center;
 }
 
+.cert-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.cert-icon {
+  width: 120px; /* same width for both */
+  height: 120px; /* fixed height to match visually */
+  object-fit: contain;
+  border: 1px solid var(--vscode-border);
+  border-radius: 4px;
+}
+
+.cert-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  line-height: 1.4;
+}
 
 .profile-pic,
 .about-content img {
