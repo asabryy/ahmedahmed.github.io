@@ -232,12 +232,15 @@ pre.comment {
 .tabs {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw; 
   z-index: 1000;
   display: flex;
   gap: 2px;
   background: var(--vscode-tab-bar-bg);
   border-bottom: 1px solid var(--vscode-border);
-  padding: 4px 0;
+  padding: 4px 1rem;
   overflow-x: auto;
   overflow-y: hidden;
 }

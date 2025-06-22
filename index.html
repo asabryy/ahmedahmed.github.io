@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <nav class="tabs container">
+  <nav class="tabs">
     <a href="#about" class="tab">About</a>
     <a href="#experience" class="tab">Experience</a>
     <a href="#skills" class="tab">Skills</a>
@@ -227,7 +227,6 @@
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            // Remove active class from all tabs
             tabs.forEach(tab => tab.classList.remove("active"));
 
             // Add active class to the tab matching the section in view
