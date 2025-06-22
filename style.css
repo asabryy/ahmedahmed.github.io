@@ -2,26 +2,22 @@
 
 /* 1. Variables */
 :root {
-  /* Core colors */
   --bg-color: #1e1e1e;
   --text-color: #d4d4d4;
   --accent-color: #569cd6;
   --link-color: #9cdcfe;
   --link-hover-color: #d7ba7d;
-  /* Button colors */
   --btn-bg: #0078D4;
   --btn-hover-bg: #005A9E;
-  /* Layout */
   --container-max: 1100px;
   --font-mono: 'Fira Code', monospace;
-  /* VSCode-like tabs */
-  --vscode-tab-bar-bg:   #252526;
+  --vscode-tab-bar-bg: #252526;
   --vscode-tab-inactive: #2d2d2d;
-  --vscode-tab-active:   #1e1e1e;
-  --vscode-border:       #3c3c3c;
-  --vscode-text-inactive:#c5c5c5;
-  --vscode-text-active:  #e8e8e8;
-  --vscode-hover:        #313131;
+  --vscode-tab-active: #1e1e1e;
+  --vscode-border: #3c3c3c;
+  --vscode-text-inactive: #c5c5c5;
+  --vscode-text-active: #e8e8e8;
+  --vscode-hover: #313131;
 }
 
 /* 2. Base & Reset */
@@ -104,6 +100,15 @@ ul {
   padding-left: 1.5rem;
 }
 
+ul.projects {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.projects li {
+  margin-bottom: 1.5rem;
+}
+
 /* 7. Links & Buttons */
 a {
   color: var(--link-color);
@@ -133,21 +138,50 @@ nav a:hover {
 }
 
 /* 8. Syntax Coloring */
+pre.func code {
+  color: #dcdcaa;
+  font-family: var(--font-mono);
+}
+
+pre.comment code {
+  color: #6a9955;
+  font-family: var(--font-mono);
+}
+pre.func {
+  color: #dcdcaa;
+  font-family: var(--font-mono);
+  margin: 0.5rem 0;
+  white-space: pre-wrap;
+}
+
+pre.comment {
+  color: #6a9955;
+  font-family: var(--font-mono);
+  margin: 0.5rem 0;
+  white-space: pre-wrap;
+}
+
 .syntax-var    { color: #9cdcfe; }
 .syntax-string { color: #ce9178; }
-.comment       { color: #6a9955; white-space: pre-wrap; margin: 0.2rem 0; }
-.func          { color: #dcdcaa; margin: 0.5rem 0 0 0; }
 .keyword       { color: #c586c0; }
 .module        { color: #9cdcfe; }
 .alias         { color: #ce9178; }
 .punctuation   { color: #d4d4d4; }
 .highlight     { background-color: rgba(86, 156, 214, 0.2); padding: 0.2rem 0.4rem; border-radius: 4px; }
 
-p.func code {
-  font-size: 1rem;
-}
-
 /* 9. About Section */
+.about-content p.comment {
+  color: #6a9955;
+  font-family: var(--font-mono);
+  white-space: pre-wrap;
+  margin: 0.2rem 0;
+}
+.about-content .comment {
+  color: #6a9955;
+  font-family: var(--font-mono);
+  white-space: pre-wrap;
+  margin: 0.2rem 0;
+}
 .about-content {
   display: flex;
   flex-direction: column;
@@ -155,6 +189,7 @@ p.func code {
   align-items: center;
   text-align: center;
 }
+
 
 .profile-pic,
 .about-content img {
