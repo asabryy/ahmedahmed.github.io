@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmed Ahmed - Portfolio</title>
+  <title>Ahmed Ahmed - DevOps Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -18,44 +18,47 @@
     <a href="#education" class="tab">Education</a>
     <a href="#contact" class="tab">Contact</a>
   </nav>
+
   <header>
-      <h1>Ahmed Ahmed</h1>
-      <p class="func"><code><span class="keyword">import</span> <span class="keyword">from</span> <span class="module">AhmedAhmed</span> <span class="keyword">as</span> <span class="alias">DataAnalyst</span><span class="punctuation">,</span> <span class="alias">SoftwareDeveloper</span></code></p>
-    </div>
+    <h1>Ahmed Ahmed</h1>
+    <p class="func"><code><span class="keyword">import</span> <span class="keyword">from</span> <span class="module">AhmedAhmed</span> <span class="keyword">as</span> <span class="alias">DevOpsEngineer</span><span class="punctuation">,</span> <span class="alias">InfrastructureAutomator</span></code></p>
   </header>
 
+  <!-- ABOUT -->
   <section id="about" class="container">
     <h2>About Me</h2>
     <div class="about-content">
       <img src="assets/profile.jpg" alt="Profile Picture">
       <div>
         <p class="comment">"""</p>
-        <p class="comment">Hi! I’m Ahmed, an aspiring Data Analyst and Software Developer with a strong foundation in IT infrastructure and automation within healthcare environments.</p>
-        <p class="comment">I excel at bridging IT operations with data workflows—collecting, cleaning, and analyzing operational data to drive business decisions and improve system efficiency. My toolkit includes Python, SQL, Power BI, and automation scripting across multiple platforms.</p>
-        <p class="comment">Outside work, I explore esports analytics, automotive technology, and cognitive psychology. Let’s connect if you need someone who can streamline workflows and uncover insights through data.</p>
+        <p class="comment">Hi! I'm Ahmed, a DevOps Engineer with a B.Sc. in Computer Science and 3+ years building infrastructure automation and CI/CD pipelines in production healthcare environments.</p>
+        <p class="comment">I bridge the gap between development and operations — containerizing workloads with Docker and Kubernetes, designing multi-environment GitHub Actions pipelines, and eliminating manual toil through Python and PowerShell automation. My background spans microservice architecture, cloud platforms (GCP, Azure, AWS), and enterprise IT systems like Active Directory, SCCM, and ServiceNow.</p>
+        <p class="comment">Outside of work I'm deep into esports, automotive culture, modern history, and Islamic theology. Let's connect if you're building something that needs reliable infrastructure behind it.</p>
         <p class="comment">"""</p>
       </div>
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
   <section id="experience" class="container">
     <h2>Experience</h2>
     <a href="https://ahmedahmed.ca/resume.pdf" class="btn-resume" download>Download Resume</a>
-    <div>
-      <h3>Desktop Support Analyst – St. Joseph’s Healthcare Hamilton</h3>
-      <p><b>June 2024 – Present</b></p>
+
+    <div class="experience-item" style="margin-top: 1.5rem;">
+      <h3>St. Joseph's Healthcare Hamilton</h3>
+
+      <p style="margin-top: 0.5rem;"><em class="role-label">Project Analyst</em> &nbsp;·&nbsp; <b>Jan 2026 – Present</b></p>
       <ul>
-        <li>Migrated code base to <span class="highlight">internal Git server</span> using Gitea, MySQL, and Ubuntu to centralize script management and version control.</li>
-        <li><span class="highlight">Built PowerShell + Excel pipeline</span> to clean AD user data, migrate 200+ Ricoh printers to HP address books, and audit security groups & shared mailboxes.</li>
-        <li><span class="highlight">Developed FastAPI service</span> to extract CSVs from SFTP and load into SQL for real-time dashboard reporting.</li>
-        <li><span class="highlight">Consolidated printer assets</span> into an Access database, improving multi-site tracking and reporting efficiency.</li>
-        <li><span class="highlight">Automated login scripts & drive maps</span> using Python, PowerShell, and Tinkerer UI to standardize configurations.</li>
-        <li><span class="highlight">Tier 2 support</span> across all locations via ServiceNow, Cisco ISE, SCCM, Intune, and Citrix Workspace.</li>
-        <li>Administered hybrid Exchange environments via Exchange Admin Center.</li>
-        <li>Managed identities & policies in Azure AD and Microsoft Intune.</li>
-        <li>Monitored & secured network devices using Ordr’s security platform.</li>
-        <li><span class="highlight">Migrated departmental codebase</span> from shared drives to centralized Gitea server.</li>
-        <li>Collaborated with Hamilton Health Sciences labs on software and device support.</li>
+        <li>Lead technical infrastructure and software delivery initiatives across clinical and IT departments, enforcing delivery standards and aligning development workflows with organizational change-management and security requirements.</li>
+      </ul>
+
+      <p style="margin-top: 1rem;"><em class="role-label">Desktop Support Analyst — Internal Tools Developer</em> &nbsp;·&nbsp; <b>May 2024 – Jan 2026</b></p>
+      <ul>
+        <li>Deployed the department's first <span class="highlight">Gitea VCS server</span> with LDAP authentication, establishing a centralized CI/CD foundation for 15+ automation scripts and enabling version-controlled deployments.</li>
+        <li><span class="highlight">Engineered a FastAPI microservice</span> integrating SFTP ingestion with a SQL pipeline, replacing a fully manual process and saving 10+ hours of data-entry work per week.</li>
+        <li>Built and automated <span class="highlight">ServiceNow Scoped Applications</span> and Flow Designer workflows with PowerShell MID Server steps, reducing staff onboarding and access provisioning cycle times.</li>
+        <li>Automated a <span class="highlight">200+ endpoint Ricoh-to-HP printer migration</span> with PowerShell, scripting address book conversion and configuration rollout to eliminate manual per-device intervention.</li>
+        <li>Administered hybrid Exchange environments, Azure AD, and Microsoft Intune; provided Tier 2 support via Cisco ISE, SCCM, and Citrix Workspace across all hospital sites.</li>
       </ul>
     </div>
 
@@ -63,9 +66,8 @@
       <h3>Deployment Technician – Microserve</h3>
       <p><b>May 2023 – May 2024</b></p>
       <ul>
-        <li>Deployed and configured 1,000+ desktops across hospitals, ensuring compliance and consistency.</li>
-        <li>Automated imaging with batch scripts, reducing setup time by 40%.</li>
-        <li>Maintained stability across Windows, Linux, and MacOS VMs.</li>
+        <li><span class="highlight">Automated imaging and configuration</span> of 1,000+ clinical desktops via batch scripting, reducing per-device deployment time and ensuring full PHIPA compliance at scale.</li>
+        <li>Standardized BIOS configurations across heterogeneous hardware fleets with PowerShell, cutting deployment failure rates across clinical and administrative units.</li>
       </ul>
     </div>
 
@@ -73,192 +75,203 @@
       <h3>Software Developer Intern – Nasser Bin Khalid Co.</h3>
       <p><b>Summer 2019</b></p>
       <ul>
-        <li>Built Java Swing shipping management system, digitizing paper workflows.</li>
-        <li>Migrated codebase to Git, enhancing collaboration and code history tracking.</li>
+        <li>Built a Java Swing shipping management system, digitizing paper-based tracking workflows and improving logistics visibility for the operations team.</li>
       </ul>
     </div>
   </section>
 
+  <!-- SKILLS -->
   <section id="skills" class="container">
     <h2>Skills</h2>
     <div class="skills-icons">
+      <i class="fab fa-docker" title="Docker"></i>
+      <i class="fas fa-dharmachakra" title="Kubernetes"></i>
+      <i class="fab fa-aws" title="AWS"></i>
       <i class="fab fa-python" title="Python"></i>
-      <i class="fas fa-database" title="SQL"></i>
-      <i class="fas fa-file-excel" title="Excel"></i>
-      <i class="fas fa-chart-bar" title="Power BI"></i>
-      <i class="fas fa-chart-line" title="Tableau"></i>
-      <i class="fab fa-js-square" title="JavaScript"></i>
-      <i class="fab fa-html5" title="HTML5"></i>
-      <i class="fab fa-css3-alt" title="CSS3"></i>
+      <i class="fas fa-terminal" title="Bash / PowerShell"></i>
       <i class="fab fa-git-alt" title="Git"></i>
-      <i class="fas fa-cubes" title="OOP"></i>
+      <i class="fab fa-github" title="GitHub Actions"></i>
+      <i class="fas fa-database" title="SQL"></i>
+      <i class="fab fa-linux" title="Linux"></i>
+      <i class="fab fa-js-square" title="JavaScript"></i>
     </div>
     <div class="skills-grid">
-      <div><span class="syntax-var">Languages:</span> <span class="syntax-string">Python</span>, <span class="syntax-string">SQL</span>, <span class="syntax-string">JavaScript</span>, <span class="syntax-string">HTML/CSS</span>, <span class="syntax-string">Java</span>, <span class="syntax-string">R</span></div>
-      <div><span class="syntax-var">Frameworks & APIs:</span> <span class="syntax-string">Flask</span>, <span class="syntax-string">FastAPI</span>, <span class="syntax-string">REST API</span></div>
-      <div><span class="syntax-var">Databases:</span> <span class="syntax-string">MySQL</span>, <span class="syntax-string">SQLite</span>, <span class="syntax-string">MS Access</span></div>
-      <div><span class="syntax-var">Tools:</span> <span class="syntax-string">PowerShell</span>, <span class="syntax-string">Git</span>, <span class="syntax-string">Bash</span>, <span class="syntax-string">GitHub Actions</span>, <span class="syntax-string">ServiceNow</span>, <span class="syntax-string">Cisco ISE</span>, <span class="syntax-string">Exchange Admin Center</span></div>
-      <div><span class="syntax-var">Data & Visualization:</span> <span class="syntax-string">Pandas</span>, <span class="syntax-string">NumPy</span>, <span class="syntax-string">Power BI</span>, <span class="syntax-string">Tableau</span>, <span class="syntax-string">Matplotlib</span>, <span class="syntax-string">Seaborn</span></div>
-      <div><span class="syntax-var">Dev Practices:</span> <span class="syntax-string">OOP</span>, <span class="syntax-string">Unit Testing</span>, <span class="syntax-string">CI/CD</span></div>
-      <div><span class="syntax-var">Soft Skills:</span> <span class="syntax-string">Problem Solving</span>, <span class="syntax-string">Communication</span>, <span class="syntax-string">Documentation</span></div>
+      <div><span class="syntax-var">Cloud &amp; DevOps:</span> <span class="syntax-string">Docker</span>, <span class="syntax-string">Kubernetes</span>, <span class="syntax-string">GitHub Actions</span>, <span class="syntax-string">GCP</span>, <span class="syntax-string">Azure</span>, <span class="syntax-string">AWS (CCP in progress)</span>, <span class="syntax-string">Nginx</span>, <span class="syntax-string">RabbitMQ</span>, <span class="syntax-string">Cloudflare R2</span></div>
+      <div><span class="syntax-var">Infra &amp; Automation:</span> <span class="syntax-string">PowerShell</span>, <span class="syntax-string">Bash</span>, <span class="syntax-string">SCCM/MECM</span>, <span class="syntax-string">Active Directory</span>, <span class="syntax-string">Intune</span>, <span class="syntax-string">Cisco ISE</span>, <span class="syntax-string">ServiceNow (Scoped Apps)</span></div>
+      <div><span class="syntax-var">Languages:</span> <span class="syntax-string">Python</span>, <span class="syntax-string">JavaScript</span>, <span class="syntax-string">SQL</span>, <span class="syntax-string">PowerShell</span>, <span class="syntax-string">Bash</span>, <span class="syntax-string">R</span>, <span class="syntax-string">Java</span></div>
+      <div><span class="syntax-var">Frameworks:</span> <span class="syntax-string">FastAPI</span>, <span class="syntax-string">Django</span>, <span class="syntax-string">Flask</span>, <span class="syntax-string">React.js</span>, <span class="syntax-string">Node.js</span></div>
+      <div><span class="syntax-var">Databases:</span> <span class="syntax-string">PostgreSQL</span>, <span class="syntax-string">MySQL</span>, <span class="syntax-string">Cloud SQL</span>, <span class="syntax-string">MariaDB</span></div>
       <div><span class="syntax-var">Languages Spoken:</span> <span class="syntax-string">English (Fluent)</span>, <span class="syntax-string">Arabic (Native)</span></div>
     </div>
   </section>
 
-<section id="projects" class="container">
-  <h2>
-  Projects
-  <a href="https://github.com/asabryy" target="_blank" class="github-link" title="View on GitHub">
-    <i class="fab fa-github"></i>
-  </a>
-</h2>
-  <ul class="projects">
-     <li>
-      <pre class="func"><code>
+  <!-- PROJECTS -->
+  <section id="projects" class="container">
+    <h2>
+      Projects
+      <a href="https://github.com/asabryy" target="_blank" class="github-link" title="View on GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </h2>
+    <ul class="projects">
+
+      <li>
+        <pre class="func"><code>
+<span class="syntax-def">def</span> <span class="syntax-func">textara_app</span><span class="syntax-parens">(</span><span class="syntax-params">Python, FastAPI, React, Docker, Kubernetes, RabbitMQ, GCP, GitHub Actions</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
+</code></pre>
+        <pre class="comment"><code>    """
+    Production microservices platform that converts Arabic PDFs to DOCX using an ML/OCR pipeline.
+    Independently containerized services for OCR, auth, and document delivery — orchestrated via
+    Kubernetes with horizontal auto-scaling. Multi-environment GitHub Actions CI/CD pipeline
+    (dev/staging/prod) with automated image builds, registry pushes, and rolling deployments.
+    Async OCR workloads decoupled from the API layer via RabbitMQ for fault-tolerant processing.
+    → textara.app
+    """</code></pre>
+      </li>
+
+      <li>
+        <pre class="func"><code>
+<span class="syntax-def">def</span> <span class="syntax-func">trustlens_extension</span><span class="syntax-parens">(</span><span class="syntax-params">Python, FastAPI, PostgreSQL, Docker, Chrome MV3, NLP</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
+</code></pre>
+        <pre class="comment"><code>    """
+    Full-stack Chrome extension with a Dockerized FastAPI/PostgreSQL backend delivering
+    real-time domain reputation scores, fact-check API signals, and NLP-based clickbait
+    detection. Community rating system uses a bridging-based consensus algorithm to
+    surface credibility signals at the browser layer.
+    """</code></pre>
+      </li>
+
+      <li>
+        <pre class="func"><code>
+<span class="syntax-def">def</span> <span class="syntax-func">document_search_engine</span><span class="syntax-parens">(</span><span class="syntax-params">Python, ElasticSearch, Kafka, Docker</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
+</code></pre>
+        <pre class="comment"><code>    """
+    Microservice-based document wrangler for refining, ranking, and analyzing documents
+    with user-defined lambda preprocessing functions. Event-driven pipeline using Kafka;
+    services containerized with Docker for independent scalability.
+    """</code></pre>
+      </li>
+
+      <li>
+        <pre class="func"><code>
+<span class="syntax-def">def</span> <span class="syntax-func">microservices_data_api</span><span class="syntax-parens">(</span><span class="syntax-params">Python, FastAPI, SQL, SFTP</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
+</code></pre>
+        <pre class="comment"><code>    """
+    FastAPI service that ingests CSV files from SFTP and loads records into SQL,
+    exposing RESTful endpoints for downstream applications and real-time data access.
+    Deployed at St. Joseph's Healthcare to replace a fully manual data-entry workflow,
+    saving 10+ hours per week.
+    """</code></pre>
+      </li>
+
+      <li>
+        <pre class="func"><code>
+<span class="syntax-def">def</span> <span class="syntax-func">printer_migration_tool</span><span class="syntax-parens">(</span><span class="syntax-params">PowerShell, CSV</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
+</code></pre>
+        <pre class="comment"><code>    """
+    Automates bulk conversion of Ricoh address book CSVs to HP format using PowerShell.
+    Deployed across 200+ endpoints at St. Joseph's Healthcare, eliminating manual
+    per-device configuration during a full fleet printer migration.
+    """</code></pre>
+      </li>
+
+      <li>
+        <pre class="func"><code>
+<span class="syntax-def">def</span> <span class="syntax-func">rdp_web_server</span><span class="syntax-parens">(</span><span class="syntax-params">Python, PicoNet, TCP/IP, Oracle VM</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
+</code></pre>
+        <pre class="comment"><code>    """
+    Implemented from scratch a simple web server (SWS) framework following the HTTP protocol,
+    enabling file transfer through a reliable datagram protocol (RDP) built over UDP.
+    """</code></pre>
+      </li>
+
+      <li>
+        <pre class="func"><code>
 <span class="syntax-def">def</span> <span class="syntax-func">gta_highway_collision_analysis</span><span class="syntax-parens">(</span><span class="syntax-params">R, SQL, Tableau</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
 </code></pre>
-      <pre class="comment"><code>    """
+        <pre class="comment"><code>    """
     Uses R and SQL to clean and analyze collision data from highways 403 and 407.
     Generates an interactive Tableau dashboard highlighting high-risk zones and temporal trends.
     """</code></pre>
-    </li>
+      </li>
 
-    <li>
-      <pre class="func"><code>
-<span class="syntax-def">def</span> <span class="syntax-func">toronto_crime_dashboard</span><span class="syntax-parens">(</span><span class="syntax-params">Python, Power BI</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
-</code></pre>
-      <pre class="comment"><code>    """
-    Processes Toronto crime datasets with Python, creating Power BI visualizations.
-    Identifies patterns by offense type, location, and time of day for stakeholder decision-making.
-    """</code></pre>
-    </li>
-    <li>
-      <pre class="func"><code>
-<span class="syntax-def">def</span> <span class="syntax-func">document_search_engine</span><span class="syntax-parens">(</span><span class="syntax-params">Python, ElasticSearch, Kafka, Docker</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
-</code></pre>
-      <pre class="comment"><code>    """
-    Microservice-based data wrangler for refining, ranking and analyzing documents
-    while preprocessing using user-defined lambda functions.
-    """</code></pre>
-    </li>
-
-    <li>
-      <pre class="func"><code>
-<span class="syntax-def">def</span> <span class="syntax-func">rdp_web_server</span><span class="syntax-parens">(</span><span class="syntax-params">Python, PicoNet, TCP/IP, Oracle VM</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
-</code></pre>
-      <pre class="comment"><code>    """
-    Implemented from scratch a simple web server (SWS) framework following the HTTP protocol
-    allowing file transfer through reliable datagram protocol (RDP).
-    """</code></pre>
-    </li>
-
-    <li>
-      <pre class="func"><code>
-<span class="syntax-def">def</span> <span class="syntax-func">ar_tour_app</span><span class="syntax-parens">(</span><span class="syntax-params">Unity</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
-</code></pre>
-      <pre class="comment"><code>    """
-    Developed an Augmented Reality museum tour app for an interactive visitor experience.
-    """</code></pre>
-    </li>
-
-    <li>
-      <pre class="func"><code>
-<span class="syntax-def">def</span> <span class="syntax-func">stock_market_discord_bot</span><span class="syntax-parens">(</span><span class="syntax-params">JavaScript, Node.js</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
-</code></pre>
-      <pre class="comment"><code>    """
-    Semantic analysis of user questions for round-the-clock channel moderation support;
-    integrated with Alpha Vantage API to provide real-time insight into the stock market.
-    """</code></pre>
-    </li>
-
-    <li>
-      <pre class="func"><code>
-<span class="syntax-def">def</span> <span class="syntax-func">group_chat_mobile_app</span><span class="syntax-parens">(</span><span class="syntax-params">Java, XML, Android Studio, Firebase</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
-</code></pre>
-      <pre class="comment"><code>    """
-    Group chat app used to connect students only for the duration of course projects,
-    removing redundant group chats.
-    """</code></pre>
-    </li>
-
-    <li>
-      <pre class="func"><code>
+      <li>
+        <pre class="func"><code>
 <span class="syntax-def">def</span> <span class="syntax-func">rl_controlled_car</span><span class="syntax-parens">(</span><span class="syntax-params">Python, Gym Retro, RL</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
 </code></pre>
-      <pre class="comment"><code>    """
+        <pre class="comment"><code>    """
     Trains reinforcement learning agents in OpenAI Gym Retro to navigate obstacles.
-    Compares performance in tournament-style evaluation for best policies.
+    Compares agent policies in a tournament-style evaluation framework.
     """</code></pre>
-    </li>
+      </li>
 
-    <li>
-      <pre class="func"><code>
-<span class="syntax-def">def</span> <span class="syntax-func">microservices_data_api</span><span class="syntax-parens">(</span><span class="syntax-params">Python, FastAPI, SQL, SFTP</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
+      <li>
+        <pre class="func"><code>
+<span class="syntax-def">def</span> <span class="syntax-func">stock_market_discord_bot</span><span class="syntax-parens">(</span><span class="syntax-params">JavaScript, Node.js</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
 </code></pre>
-      <pre class="comment"><code>    """
-    Develops a FastAPI service to ingest CSV files from SFTP and store records in SQL.
-    Exposes RESTful endpoints for downstream applications and real-time data access.
+        <pre class="comment"><code>    """
+    Semantic analysis of user questions for round-the-clock channel moderation support;
+    integrated with Alpha Vantage API to provide real-time stock market insights.
     """</code></pre>
-    </li>
+      </li>
 
-    <li>
-      <pre class="func"><code>
-<span class="syntax-def">def</span> <span class="syntax-func">printer_migration_tool</span><span class="syntax-parens">(</span><span class="syntax-params">PowerShell, CSV</span><span class="syntax-parens">)</span><span class="syntax-colon">:</span>
-</code></pre>
-      <pre class="comment"><code>    """
-    Automates conversion of Ricoh address book CSVs to HP format using PowerShell.
-    Streamlines mass migration of printer contacts and settings across networks.
-    """</code></pre>
-    </li>
+    </ul>
+  </section>
 
-  </ul>
-</section>
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="container">
+    <h2>Certifications</h2>
 
-
-
-
-
- <section id="certifications" class="container">
-  <h2>Certifications</h2>
-
-  <div class="cert-item">
-    <a href="https://www.credly.com/badges/f18f8473-75a4-4303-a83d-e5dbac261098/linked_in_profile" target="_blank">
-      <img src="https://images.credly.com/size/340x340/images/88c25fa4-9007-42cc-b9c5-16441a878507/GCC_badge_DA_1000x1000.png" 
-           alt="Google Data Analytics Certificate" class="cert-icon">
-    </a>
-    <div class="cert-text">
-      <strong>Google Data Analytics Professional Certificate</strong><br>
-      <em>Coursera • 2025</em>
+    <div class="cert-item">
+      <div class="cert-icon cert-icon-placeholder">
+        <i class="fab fa-aws" style="font-size: 3rem; color: #FF9900;"></i>
+      </div>
+      <div class="cert-text">
+        <strong>AWS Certified Cloud Practitioner</strong><br>
+        <em>Amazon Web Services · In Progress (2025)</em>
+      </div>
     </div>
-  </div>
 
-  <div class="cert-item">
-    <a href="https://www.coursera.org/account/accomplishments/certificate/AE5ZEPJVPJ32" target="_blank">
-      <img src="assets/stanford.png" 
-           alt="Stanford Online Certificate" class="cert-icon">
-    </a>
-    <div class="cert-text">
-      <strong>Supervised Machine Learning: Regression and Classification</strong><br>
-      <em>Stanford Online • 2023</em>
+    <div class="cert-item">
+      <a href="https://www.credly.com/badges/f18f8473-75a4-4303-a83d-e5dbac261098/linked_in_profile" target="_blank">
+        <img src="https://images.credly.com/size/340x340/images/88c25fa4-9007-42cc-b9c5-16441a878507/GCC_badge_DA_1000x1000.png"
+             alt="Google Data Analytics Certificate" class="cert-icon">
+      </a>
+      <div class="cert-text">
+        <strong>Google Data Analytics Professional Certificate</strong><br>
+        <em>Coursera · 2025</em>
+      </div>
     </div>
-  </div>
-</section>
 
-
-  <section id="education" class="container">
-    <h2>Education</h2>
-    <div class="education-entry">
-    <img src="https://images.seeklogo.com/logo-png/50/1/university-of-victoria-logo-png_seeklogo-507534.png" alt="UVic Logo" class="university-logo">
-      <div class="education-details">
-      <h3>BSc in Computer Science – University of Victoria</h3>
-      <p>2019 – 2023</p>
-      <ul>
-        <li>Specialization in Machine Learning and Intelligent Systems</li>
-        <li>Relevant Coursework: Data Mining, Artificial Intelligence, Data Structures & Algorithms, Database Systems, Operating Systems, Networking, System Analysis</li>
-      </ul>
+    <div class="cert-item">
+      <a href="https://www.coursera.org/account/accomplishments/certificate/AE5ZEPJVPJ32" target="_blank">
+        <img src="assets/stanford.png"
+             alt="Stanford Online Certificate" class="cert-icon">
+      </a>
+      <div class="cert-text">
+        <strong>Supervised Machine Learning: Regression and Classification</strong><br>
+        <em>Stanford Online · 2023</em>
+      </div>
     </div>
   </section>
 
+  <!-- EDUCATION -->
+  <section id="education" class="container">
+    <h2>Education</h2>
+    <div class="education-entry">
+      <img src="https://images.seeklogo.com/logo-png/50/1/university-of-victoria-logo-png_seeklogo-507534.png" alt="UVic Logo" class="university-logo">
+      <div class="education-details">
+        <h3>BSc in Computer Science – University of Victoria</h3>
+        <p>2019 – 2023 &nbsp;·&nbsp; GPA: 3.66</p>
+        <ul>
+          <li>Specialization in Machine Learning and Intelligent Systems</li>
+          <li>Relevant Coursework: Operating Systems, Networking, Database Systems, Data Mining, Artificial Intelligence, Data Structures &amp; Algorithms, System Analysis</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEERING -->
   <section id="volunteering" class="container">
     <h2>Volunteering</h2>
     <ul>
@@ -267,76 +280,67 @@
     </ul>
   </section>
 
-<section id="interests" class="container">
-  <h2>Interests</h2>
+  <!-- INTERESTS -->
+  <section id="interests" class="container">
+    <h2>Interests</h2>
 
-  <div class="interest-subsection">
-    <h3>Cars & Racing</h3>
-
-    <div class="car-images-grid">
-      <div class="car-card">
-        <img src="https://images.genius.com/4c857d0296e28bd2200e879340b7e54c.622x622x1.png" alt="Midnight Club 3: DUB Edition Remix">
-        <p><strong>Midnight Club 3: DUB Edition Remix</strong><br>
-           My all-time favorite racing game that shaped my love for car culture.
-        </p>
-      </div>
-      <div class="car-card">
-        <img src="assets/kia-stinger.jpg" alt="2020 Kia Stinger GT2 Ghost Grey">
-        <img src="assets/kia-stinger-cat.jpg" alt="2020 Kia Stinger GT2 Ghost Grey">
-        <p><strong>2020 Kia Stinger GT2</strong><br>
-           Currently driving this in Ghost Grey — practical performance sedan.
-        </p>
-      </div>
-      <div class="car-card">
-        <img src="https://stateofspeed.com/wp-content/uploads/2020/02/DSC_0796-copy.jpg" alt="Modified Lancer Evo 9 rally-style">
-        <p><strong>Mitsubishi Lancer Evo 9</strong><br>
-           Dream build: rally-style project car with single-turbo power & tuned suspension.
-        </p>
+    <div class="interest-subsection">
+      <h3>Cars &amp; Racing</h3>
+      <div class="car-images-grid">
+        <div class="car-card">
+          <img src="https://images.genius.com/4c857d0296e28bd2200e879340b7e54c.622x622x1.png" alt="Midnight Club 3: DUB Edition Remix">
+          <p><strong>Midnight Club 3: DUB Edition Remix</strong><br>My all-time favourite racing game that shaped my love for car culture.</p>
+        </div>
+        <div class="car-card">
+          <img src="assets/kia-stinger.jpg" alt="2020 Kia Stinger GT2 Ghost Grey">
+          <img src="assets/kia-stinger-cat.jpg" alt="2020 Kia Stinger GT2 Ghost Grey">
+          <p><strong>2020 Kia Stinger GT2</strong><br>Currently driving this in Ghost Grey — practical performance sedan.</p>
+        </div>
+        <div class="car-card">
+          <img src="https://stateofspeed.com/wp-content/uploads/2020/02/DSC_0796-copy.jpg" alt="Modified Lancer Evo 9 rally-style">
+          <p><strong>Mitsubishi Lancer Evo 9</strong><br>Dream build: rally-style project car with single-turbo power &amp; tuned suspension.</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <h3>Esports & Gaming Stats</h3>
-  <div class="esports-grid">
-    <div class="esport-card">
-      <img src="https://img.icons8.com/?size=100&id=63667&format=png&color=000000" alt="Overwatch" class="esport-icon">
-      <img src="assets/ow-gm.png" alt="Grand Master" class="rank-icon">
-      <p><strong>Overwatch</strong><br><em>Grand Master</em></p>
+    <h3>Esports &amp; Gaming</h3>
+    <div class="esports-grid">
+      <div class="esport-card">
+        <img src="https://img.icons8.com/?size=100&id=63667&format=png&color=000000" alt="Overwatch" class="esport-icon">
+        <img src="assets/ow-gm.png" alt="Grand Master" class="rank-icon">
+        <p><strong>Overwatch</strong><br><em>Grand Master</em></p>
+      </div>
+      <div class="esport-card">
+        <img src="https://img.icons8.com/?size=100&id=Rqk11fzH1NQq&format=png&color=000000" alt="Dota 2" class="esport-icon">
+        <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/3/33/SeasonalRank7-5.png/revision/latest/scale-to-width-down/250?cb=20190130003041" alt="Divine" class="rank-icon">
+        <p><strong>Dota 2</strong><br><em>Divine</em></p>
+      </div>
+      <div class="esport-card">
+        <img src="https://img.icons8.com/?size=100&id=rUkS8M9PjkO0&format=png&color=000000" alt="CS:GO" class="esport-icon">
+        <img src="https://csdb.gg/wp-content/uploads/2024/07/Distinguished-Master-Guardian-CS2CSGO-Rank-Badge.png" alt="Distinguished Master Guardian" class="rank-icon">
+        <p><strong>CS:GO</strong><br><em>Distinguished Master Guardian</em></p>
+      </div>
+      <div class="esport-card">
+        <img src="https://img.icons8.com/?size=100&id=aUZxT3Erwill&format=png&color=000000" alt="Valorant" class="esport-icon">
+        <img src="https://cdn3.emoji.gg/emojis/96809-valorant-ascendant-2.png" alt="Ascendant 2" class="rank-icon">
+        <p><strong>Valorant</strong><br><em>Ascendant 2</em></p>
+      </div>
+      <div class="esport-card">
+        <img src="https://www.freepnglogos.com/uploads/apex-legends-logo-png/apex-game-png-logo-21.png" alt="Apex Legends" class="esport-icon">
+        <img src="https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/1e/Ranked_Tier5_Diamond.png/revision/latest?cb=20190902181402" alt="Diamond" class="rank-icon">
+        <p><strong>Apex Legends</strong><br><em>Diamond</em></p>
+      </div>
     </div>
 
-    <div class="esport-card">
-      <img src="https://img.icons8.com/?size=100&id=Rqk11fzH1NQq&format=png&color=000000" alt="Dota 2" class="esport-icon">
-      <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/3/33/SeasonalRank7-5.png/revision/latest/scale-to-width-down/250?cb=20190130003041" alt="Divine" class="rank-icon">
-      <p><strong>Dota 2</strong><br><em>Divine</em></p>
-    </div>
+    <h3 style="margin-top: 2rem;">Subjects: History, Geopolitics, Islamic Theology &amp; Game Theory</h3>
+  </section>
 
-    <div class="esport-card">
-      <img src="https://img.icons8.com/?size=100&id=rUkS8M9PjkO0&format=png&color=000000" alt="CS:GO" class="esport-icon">
-      <img src="https://csdb.gg/wp-content/uploads/2024/07/Distinguished-Master-Guardian-CS2CSGO-Rank-Badge.png" alt="Distinguished Master Guardian" class="rank-icon">
-      <p><strong>CS:GO</strong><br><em>Distinguished Master Guardian</em></p>
-    </div>
-
-    <div class="esport-card">
-      <img src="https://img.icons8.com/?size=100&id=aUZxT3Erwill&format=png&color=000000" alt="Valorant" class="esport-icon">
-      <img src="https://cdn3.emoji.gg/emojis/96809-valorant-ascendant-2.png" alt="Ascendant 2" class="rank-icon">
-      <p><strong>Valorant</strong><br><em>Ascendant 2</em></p>
-    </div>
-
-    <div class="esport-card">
-      <img src="https://www.freepnglogos.com/uploads/apex-legends-logo-png/apex-game-png-logo-21.png" alt="Apex Legends" class="esport-icon">
-      <img src="https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/1e/Ranked_Tier5_Diamond.png/revision/latest?cb=20190902181402" alt="Diamond" class="rank-icon">
-      <p><strong>Apex Legends</strong><br><em>Diamond</em></p>
-    </div>
-  </div>
-  <h3>Subjects: History, Psychology, Game Theory and Religion</h3>
-</section>
-
-
-
+  <!-- CONTACT -->
   <section id="contact" class="container">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:AHeshamSabry@gmail.com">AHeshamSabry@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmedsabryahmed" target="_blank">linkedin.com/in/ahmedsabryahmed</a></p>
+    <p>GitHub: <a href="https://github.com/asabryy" target="_blank">github.com/asabryy</a></p>
     <p>Website: <a href="https://ahmedahmed.ca" target="_blank">ahmedahmed.ca</a></p>
   </section>
 
@@ -348,27 +352,20 @@
 
   <script>
     const tabs = document.querySelectorAll(".tabs .tab");
-    const sections = document.querySelectorAll("main section");
+    const sections = document.querySelectorAll("section");
 
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             tabs.forEach(tab => tab.classList.remove("active"));
-
-            // Add active class to the tab matching the section in view
             const id = entry.target.getAttribute("id");
             const activeTab = document.querySelector(`.tabs .tab[href="#${id}"]`);
-            if (activeTab) {
-              activeTab.classList.add("active");
-            }
+            if (activeTab) activeTab.classList.add("active");
           }
         });
       },
-      {
-        rootMargin: "-50% 0px -45% 0px", // triggers near the middle of viewport
-        threshold: 0.1
-      }
+      { rootMargin: "-50% 0px -45% 0px", threshold: 0.1 }
     );
 
     sections.forEach(section => observer.observe(section));
