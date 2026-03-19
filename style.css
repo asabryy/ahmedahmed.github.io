@@ -452,4 +452,20 @@ pre.comment {
 .education-details p {
   margin: 0.2rem 0;
 }
-
+/* Role label within multi-role experience entries */
+.role-label {
+  color: #4ec9b0;
+  font-style: italic;
+}
+ 
+/* Cert icon placeholder (for AWS in-progress, no badge image yet) */
+.cert-icon-placeholder {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--vscode-border);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
